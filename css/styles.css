@@ -102,43 +102,80 @@ ul { list-style-type: none;
 
 
  .hero-section {background-color: #2e2f42;
+    padding: 188px;
 }
 
-.hero-section-title {font-weight: 700;
+.hero-section-title {
+    max-width: 496px;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #fff;}
+    color: #fff;
+    margin: auto;
+    margin-bottom: 48px;
+}
 
     .hero-section-button {
+        display: block;
+        margin: auto;
         background-color: #4d5ae5;;
         font-family: inherit;
         font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.04em;
-            color: #fff;
-            cursor: pointer;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+        cursor: pointer;
     }
 
     .hero-section-button:hover,
     .hero-section-button:focus {background-color: #404BBF;}
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
-.services-section-subtitle {font-weight: 500;
+.services-section {
+padding: 120px 0;
+}
+
+.services-section-list {
+display: flex;
+gap: 24px;
+}
+
+.services-section-item {
+    width: calc ((100% - 72px) / 4);
+}
+
+.services-section-subtitle {
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;}
+    color: #2e2f42;
+    margin-bottom: 8px;}
 
     .services-section-description {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;}
 
-    .team-section {background-color: #F4F4FD;}
+    .team-section {background-color: #F4F4FD;
+    padding: 120px;}
 
     .team-section-title {
         text-transform: capitalize;
@@ -148,9 +185,19 @@ ul { list-style-type: none;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        margin-bottom: 72px;
     }
 
- .team-section-item {background-color: #FFFFFF;}
+ .team-section-item {background-color: #FFFFFF;
+border-radius: 0 0 4px 4px;}
+
+ .team-section-list {
+    display: flex;
+    gap: 24px;
+ }
+
+ .team-section-text {
+    padding: 32px 16px;}
 
     .team-section-member-name {
         
@@ -160,6 +207,7 @@ ul { list-style-type: none;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        padding-bottom: 8px;
     }
 
         .team-section-member-role {
@@ -169,8 +217,16 @@ ul { list-style-type: none;
             text-align: center;
             color: #434455;}
 
-.portfolio-section-title {
+.portfolio-section {
+    padding: 120px;
+}
 
+.portfolio-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+.portfolio-section-title {
     text-transform: capitalize;
     font-weight: 700;
     font-size: 36px;
@@ -178,13 +234,15 @@ ul { list-style-type: none;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
     }
 
   .portfolio-section-project-title {font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;}
+    color: #2e2f42;
+padding-bottom: 8px;}
 
     .portfolio-section-project-description {
         font-size: 16px;
@@ -192,11 +250,20 @@ ul { list-style-type: none;
         letter-spacing: 0.02em;
         color: #434455;}
 
+        .portfolio-text {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            padding-left: 16px;
+        }
+
     .footer-page {
          background-color: #2e2f42;
+         padding: 100px;
                  }
 
 .footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
 font-weight: 700;
     font-size: 18px;
@@ -215,5 +282,6 @@ font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #f4f4fd;}
+    color: #f4f4fd;
+max-width: 264px;}
 
